@@ -45,7 +45,7 @@ def parse_args():
 
   return parser.parse_args()
 
-TIDAL_ZIP_REGEX = re.compile(r'([A-Za-z]+)\-([A-Za-z ]+)-FLAC')
+TIDAL_ZIP_REGEX = re.compile(r'([A-Za-z ]+)\-([A-Za-z ]+)-FLAC')
 
 def _exit_unknown_zip(reason):
   print(f"This zip is not supported: {reason}.")
